@@ -1,1 +1,1 @@
-# paulin102.github.io
+[Contribution guidelines for this project](GO.html)
