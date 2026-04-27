@@ -1,0 +1,331 @@
+body
+{
+    background-color: #222222;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: rgb(216, 216, 216);
+    margin: 0 !important;
+}
+
+#container
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.logo
+{
+    width: 600px;
+    font-size: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+img
+{
+    width: 100px;
+}
+
+.menu
+{ 
+	width: 100%;
+	padding: 10px 0;
+	background-color: #b8420b;
+	text-align: center;
+}
+
+ol
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-size: 18px;
+	height: 35px;
+	line-height: 200%;
+	display: inline-block;
+}
+
+ol a
+{
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+}
+
+ol > li
+{
+	float: left;
+	width: 200px;
+	height: 40px;
+	border-right: 1px dashed #6f2908;
+}
+
+ol > li:first-child
+{
+	border-left: 1px dashed #6f2908;
+}
+
+/*ol > li:hover
+{
+	background-color: #088273;
+    border-radius: 5px;
+}*/
+
+ol > li:hover > a
+{
+	color: white;
+    font-weight: 700;
+}
+
+ol > li > ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	height: 40px;
+	display: none;
+    margin: 0; /* margines górny na 5px reszta 0 */
+}
+
+ol > li:hover > ul
+{
+	display: block;
+}
+
+ol > li > ul > li
+{
+	background-color:#b8420b;
+	position: relative;
+	z-index: 100;
+	border-top: 1px dashed #b8420b;
+}
+
+/*ol > li > ul > li:hover
+{
+	background-color: #088273;
+}*/
+
+ol > li > ul > li:hover > a
+{
+	color: white;
+    font-weight: 700;
+}
+
+main
+{
+    padding: 40px;
+    width: 1000px;
+    background-color: #333333;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    column-count: 4;
+    column-gap: 20px;
+    text-align: center;
+}
+
+.opis
+{
+    column-count: 1;
+}
+
+/* nagłówek */
+header
+{
+    width: 100%;
+    height:auto;
+    padding: 0;
+}
+
+.tekst
+{
+    column-count: 2;
+    column-gap: 20px;
+}
+
+h1
+{
+    text-align: center;
+}
+
+.do_sortu
+{
+    column-count: 4;
+}
+
+footer
+{
+    clear: both;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+}
+
+a
+{
+    text-align: center;
+}
+
+/* nieodwiedzony link*/
+a:link
+{
+    color: rgb(216, 216, 216);
+}
+
+/*odwiedzony link*/
+a:visited
+{
+    color: rgb(216, 216, 216);
+}
+
+/*najechany link*/
+a:hover
+{
+    color: white;
+}
+
+article
+{
+    display: block;
+}
+
+/* kafelek tytułowy */
+.tile
+{
+    border: 1px solid white;
+    background-color: #b8420b;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* kafelek z opisem */
+.tile2
+{
+    border: 1px solid white;
+    background-color: #222222;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* kafelek do opisu podziału strony */
+.tile3
+{
+    border: 1px solid white;
+    background-color: #222222;
+    font-size: 20px;
+    padding: 10px;
+    width: 400px;
+    height: 170px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: justify;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* pasek do przewijania */
+::-webkit-scrollbar 
+{
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track
+{
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb 
+{
+    background: #6f2908; 
+    border-radius: 10px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+{
+    background: #b8420b; 
+}
+
+/* przyklejone menu */
+.sticky
+{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.characters
+{
+    display: inline-block;
+}
+
+.characters::after
+{
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
+.characters a
+{
+    opacity: 0.9;
+}
+
+.characters a:hover
+{
+    opacity: 1;
+}
+
+figure
+{
+    margin: 8px;
+    padding: 5px;
+    width: 50%;
+    float: left;
+}
+
+figcaption
+{
+    margin-top: 8px;
+    padding: 0;
+    text-align: center;
+}
+
+.story
+{
+    column-count: 1;
+    text-align: left;
+}
+
+.stories
+{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
