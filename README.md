@@ -17,6 +17,5 @@
             <footer>
                 &copy; Wszelkie prawa zastrzeżone
             </footer>
-        </div>  
     </body>
 </html>
