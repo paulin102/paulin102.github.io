@@ -1,1 +1,1 @@
-[Contribution guidelines for this project](GO.html)
+[Good Omens](GO.html)
